@@ -91,7 +91,7 @@ recovery-point-offset-checkpoint
 log-start-offset-checkpoint
 replication-offset-checkpoint
 
-
+***************You are done with the Setup ********************
 ```
 
 
