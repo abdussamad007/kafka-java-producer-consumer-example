@@ -77,6 +77,21 @@ abdus@abdus-HP-EliteBook-8460p:~/kafka/kafka_2.13-2.5.0$
 Now start the zookeeper again.
 abdus@abdus-HP-EliteBook-8460p:~/kafka/kafka_2.13-2.5.0$ bin/zookeeper-server-start.sh config/zookeeper.properties
 This time you will not find any error.
+
+Now update conf/server.properties by below 
+log.dirs=/home/abdus/kafka/kafka_2.13-2.5.0/data/kafka
+
+Now start kafka using below command.
+abdus@abdus-HP-EliteBook-8460p:~/kafka/kafka_2.13-2.5.0$ bin/kafka-server-start.sh config/server.properties
+
+If will looks good you will see the 5 files got created in /kafka/kafka_2.13-2.5.0/data/kafka
+cleaner-offset-checkpoint
+meta.properties
+recovery-point-offset-checkpoint
+log-start-offset-checkpoint
+replication-offset-checkpoint
+
+
 ```
 
 
